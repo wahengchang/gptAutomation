@@ -1,0 +1,28 @@
+{
+    "tasks": [
+      {
+        "id": "askLocation",
+        "type": "UserInput",
+        "input": "where do you wanna go?",
+        "output": "location"
+      },
+      {
+        "id": "task1",
+        "type": "Perplexity",
+        "input": "What is the weather today in {location}?.(reply in very short)",
+        "output": "weatherInfo"
+      },
+      {
+        "id": "task2",
+        "type": "ChatGPT",
+        "input": "{weatherInfo}, in such weather, recommend 3 outdoor places in {Macau}.(reply in very short)",
+        "output": "outdoorPlaces"
+      },
+      {
+        "id": "task3",
+        "type": "ChatGPT",
+        "input": "{weatherInfo}\n\n{outdoorPlaces}\n\nBased on the information above, write a blog on Medium.",
+        "output": "blogPost"
+      }
+    ]
+  }

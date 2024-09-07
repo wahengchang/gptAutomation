@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "askProject",
+      "type": "UserInput",
+      "input": "The name of web3/crypto project",
+      "output": "project"
+    },
+    {
+      "id": "q1",
+      "type": "Perplexity",
+      "input": "Base on the information on the internet today, research information and explain about the web3/crypto project: '{project}'\n\nmust include information of 1.what is the project about 2.who is the creator 3.what investment fundation support the project 4.what make the project so special 5.related importand timeline and other popular topic question about the project",
+      "output": "q1"
+    },
+    {
+      "id": "q2",
+      "type": "ChatGPT",
+      "input": "-=- reference start =-=\n\n{q1}\n\n-=-= reference end -=\n\n reference the information above, as a Editor in BBC style tone, originally write a Article about '{project}' in 繁體中文",
+      "output": "facebook"
+    }
+  ]
+}

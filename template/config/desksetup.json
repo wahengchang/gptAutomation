@@ -1,0 +1,22 @@
+{
+    "tasks": [
+      {
+        "id": "askLocation",
+        "type": "UserInput",
+        "input": "職業",
+        "output": "job"
+      },
+      {
+        "id": "q1",
+        "type": "Perplexity",
+        "input": "3個idea, {job}的辨工桌面神器(desktop setup)",
+        "output": "q1"
+      },
+      {
+        "id": "q2",
+        "type": "ChatGPT",
+        "input": "-=- reference start =-=\n\n3個idea, {job}的辨工桌面神器\n\n{q1}\n\n-=-= reference end -=\n\n reference the information above, write a Article in 繁體中文",
+        "output": "facebook"
+      }
+    ]
+  }

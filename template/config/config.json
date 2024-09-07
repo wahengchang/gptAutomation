@@ -1,0 +1,22 @@
+{
+    "tasks": [
+      {
+        "id": "task1",
+        "type": "Perplexity",
+        "input": "What is the weather today in Tokyo?.(reply in very short)",
+        "output": "weatherInfo"
+      },
+      {
+        "id": "task2",
+        "type": "ChatGPT",
+        "input": "{weatherInfo}, in such weather, recommend 3 outdoor places in Tokyo.(reply in very short)",
+        "output": "outdoorPlaces"
+      },
+      {
+        "id": "task3",
+        "type": "ChatGPT",
+        "input": "{weatherInfo}\n\n{outdoorPlaces}\n\nBased on the information above, write a blog on Medium.",
+        "output": "blogPost"
+      }
+    ]
+  }
